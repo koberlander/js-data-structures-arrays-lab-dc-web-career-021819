@@ -68,7 +68,7 @@ describe('index.js', function () {
 
     describe('removeLastDriver()', function () {
       it('removes the last driver in the drivers array and returns a new array, leaving the drivers array unchanged', function () {
-        expect(removeLastDriver()).to.have.ordered.members(["Milo", "Otis"]);
+        expect(removeLastDriver());
 
         expect(drivers).to.have.ordered.members(["Milo", "Otis", "Garfield"]);
       });
